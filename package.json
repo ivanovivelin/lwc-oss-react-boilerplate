@@ -1,0 +1,38 @@
+{
+  "name": "react-lwc-oss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "lightning-base-components": "^1.11.1-alpha",
+    "@salesforce-ux/design-system": "^2.13.5",
+    "lwc": "^1.9.7",
+    "lwc-webpack-plugin": "^1.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "style-loader": "^2.0.0",
+    "fs-extra": "9.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^4.5.1",
+    "path": "^0.12.7",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "scripts": {
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "webpack-cli serve --mode development --config webpack.config.js",
+    "prepare:slds": "node scripts/copySldsAssets.js",
+    "prod": "webpack --mode=production"
+  }
+}
